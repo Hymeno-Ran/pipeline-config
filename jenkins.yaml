@@ -1,0 +1,8 @@
+template: default
+
+libraries:
+  - shared_lib
+
+stages:
+  - build
+  - deploy
