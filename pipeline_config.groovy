@@ -1,4 +1,4 @@
-@merge
+
 pipeline_template = "test-template-ci"
 
 libraries{
