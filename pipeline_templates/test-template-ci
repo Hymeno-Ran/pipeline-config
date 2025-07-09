@@ -4,13 +4,13 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        build()
+        build.call()
       }
     }
 
     stage('Deploy') {
       steps {
-        deploy()
+        deploy.call()
       }
     }
   }
