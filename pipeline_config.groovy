@@ -1,12 +1,4 @@
-
-pipeline_template = "test-template-ci"
-
+@merge
 libraries{
-    merge = true
     lib
-}
-
-stages {
-    build()
-    deploy()
 }
