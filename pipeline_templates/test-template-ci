@@ -1,17 +1,5 @@
-pipeline {
-  agent any
+properties {}
 
-  stages {
-    stage('Build') {
-      steps {
-        build.call()
-      }
-    }
-
-    stage('Deploy') {
-      steps {
-        deploy.call()
-      }
-    }
-  }
+use_existing_agent {
+  build()
 }
