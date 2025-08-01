@@ -1,5 +1,6 @@
 properties {}
 
 use_existing_agent {
+  println('start')
   build()
 }
