@@ -1,4 +1,8 @@
-properties {}
+properties([
+    buildDiscarder(logRotator(numToKeepStr: '10')),
+    disableConcurrentBuilds()
+])
+
 
 use_existing_agent {
   echo "start"
