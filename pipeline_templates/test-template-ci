@@ -1,8 +1,11 @@
-properties([
-    buildDiscarder(logRotator(numToKeepStr: '10')),
-    disableConcurrentBuilds()
-])
-
+lifecycle {
+  beforeAgent {
+    properties([
+      buildDiscarder(logRotator(numToKeepStr: '10')),
+      disableConcurrentBuilds()
+    ])
+  }
+}
 
 use_existing_agent {
   echo "start"
