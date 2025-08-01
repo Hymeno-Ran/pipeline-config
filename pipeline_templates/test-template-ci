@@ -1,6 +1,6 @@
 properties {}
 
 use_existing_agent {
-  println('start')
+  echo "start"
   build()
 }
