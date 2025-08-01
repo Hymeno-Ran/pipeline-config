@@ -1,13 +1,3 @@
-# lifecycle {
-#   beforeAgent {
-#     properties([
-#       buildDiscarder(logRotator(numToKeepStr: '10')),
-#       disableConcurrentBuilds()
-#     ])
-#   }
-# }
 
-use_existing_agent {
-  echo "start"
-  build()
-}
+echo "start"
+build()
