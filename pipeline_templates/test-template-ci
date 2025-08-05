@@ -5,7 +5,7 @@ properties(
       string(name: 'b', defaultValue: 'b', description: 'Parameter b'),
       string(name: 'c', defaultValue: 'c', description: 'Parameter c'),
       string(name: 'd', defaultValue: 'd', description: 'Parameter d'),
-      string(name: 'repo')
+      string(name: 'repo', defaultValue: 'd', description: 'Parameter d')
     ])
   ]
 )
@@ -16,4 +16,5 @@ echo "start"
 
 node {
   build(a='e',b='f',c='g',d='h')
+
 }
