@@ -12,4 +12,8 @@ properties(
 
 
 echo "start"
-build(a='e',b='f',c='g',d='h')
+
+
+node {
+  build(a='e',b='f',c='g',d='h')
+}
