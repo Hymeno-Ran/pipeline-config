@@ -11,10 +11,10 @@ properties(
 )
 
 
-echo "start"
+
 
 
 node {
   build(a='e',b='f',c='g',d='h')
-
+  echo "start"
 }
