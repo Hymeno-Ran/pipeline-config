@@ -1,10 +1,10 @@
 properties(
   [
     parameters([
-      string(name: 'a', defaultValue: 'a', description: 'Parameter a'),
-      string(name: 'b', defaultValue: 'b', description: 'Parameter b'),
-      string(name: 'c', defaultValue: 'c', description: 'Parameter c'),
-      string(name: 'd', defaultValue: 'd', description: 'Parameter d'),
+      # string(name: 'a', defaultValue: 'a', description: 'Parameter a'),
+      # string(name: 'b', defaultValue: 'b', description: 'Parameter b'),
+      # string(name: 'c', defaultValue: 'c', description: 'Parameter c'),
+      # string(name: 'd', defaultValue: 'd', description: 'Parameter d'),
       string(name: 'repo', defaultValue: 'd', description: 'Parameter d')
     ])
   ]
