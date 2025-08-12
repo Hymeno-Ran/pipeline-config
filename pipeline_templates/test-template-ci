@@ -6,7 +6,7 @@ properties(
   ]
 )
 
-node('jenkins-agent') {
+node('docker-agent') {
   build()
   deploy()
 }
