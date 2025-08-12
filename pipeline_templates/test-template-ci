@@ -6,7 +6,7 @@ properties(
   ]
 )
 
-node('jenkins_agent') {
+node('jenkins-agent') {
   build()
   deploy()
 }
