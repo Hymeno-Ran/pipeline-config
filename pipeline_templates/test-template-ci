@@ -6,7 +6,7 @@ properties(
   ]
 )
 
-node {
-  build(a='e',b='f',c='g',d='h')
-  echo "start"
+node('jenkins_agent') {
+  build()
+  deploy()
 }
