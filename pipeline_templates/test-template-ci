@@ -2,13 +2,12 @@ properties(
   [
     parameters([
       string(name: 'repo', defaultValue: 'd', description: 'Parameter d')
-
     ])
   ]
 )
 
 node('docker-agent') {
-  pre_build()
   build()
+  pre_build()
   deploy()
 }
