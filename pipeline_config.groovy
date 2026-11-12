@@ -1,4 +1,5 @@
 // Global tier: áp dụng cho mọi job dùng JTE
+@merge     // app được thêm jte.pipeline_template, nhưng không đổi được allow_scm_jenkinsfile
 jte {
     allow_scm_jenkinsfile = false   // repo app không được dùng Jenkinsfile riêng
 }
