@@ -10,4 +10,7 @@ node('docker-agent') {
   build()
   pre_build()
   deploy()
+  push()
+  deploy()
+  smoke_test()
 }
