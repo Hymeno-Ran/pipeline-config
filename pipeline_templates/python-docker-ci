@@ -1,0 +1,9 @@
+// CI/CD cho app Python đóng gói bằng Docker, deploy bằng docker compose
+node(agent_label) {
+    pre_build()     // checkout
+    unit_test()
+    build()
+    push()
+    deploy()
+    smoke_test()
+}

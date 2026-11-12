@@ -1,16 +1,6 @@
-properties(
-  [
-    parameters([
-      string(name: 'repo', defaultValue: 'd', description: 'Parameter d')
-    ])
-  ]
-)
-
-node('docker-agent') {
-  build()
-  pre_build()
-  deploy()
-  push()
-  deploy()
-  smoke_test()
+// Template thử nghiệm: chỉ CI, không deploy
+node(agent_label) {
+    pre_build()
+    unit_test()
+    build()
 }
